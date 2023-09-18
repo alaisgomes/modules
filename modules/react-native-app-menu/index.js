@@ -1,68 +1,81 @@
-import React, { useContext } from "react";
-import { OptionsContext, GlobalOptionsContext } from "@options";
+import React from "react";
 import { SafeAreaView, ScrollView, View, Text, Pressable } from "react-native";
 import { useNavigation, useNavigationState } from "@react-navigation/native";
 
+// Test data
+const testData = {
+  styles: {
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+    },
+    hr: {
+      height: 1,
+      backgroundColor: 'grey',
+      marginVertical: 8,
+    },
+    button: {
+      backgroundColor: '#3b5998',
+      paddingVertical: 10,
+      paddingHorizontal: 20,
+      borderRadius: 25,
+      marginVertical: 5,
+      elevation: 3, // shadow for Android
+      shadowColor: "#000", // shadow for iOS
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+    },
+    buttonText: {
+      color: '#fff',
+      textAlign: 'center',
+    },
+    text: {
+      fontSize: 18,
+      padding: 10,
+    },
+    boldText: {
+      fontWeight: 'bold',
+    },
+  },
+  title: 'App Menu',
+  copy: 'Routes',
+};
+
 function AppMenu() {
-  const options = useContext(OptionsContext);
   return (
-    <SafeAreaView style={options.styles.container}>
+    <SafeAreaView style={testData.styles.container}>
       <ScrollView>
-        <AppRoutes options={options} />
-        <View style={options.styles.hr} />
-        <GlobalOptions options={options} />
+        <AppRoutes />
+        <View style={testData.styles.hr} />
       </ScrollView>
     </SafeAreaView>
   );
 }
 
-function AppRoutes({ options }) {
+function AppRoutes() {
   const navigation = useNavigation();
   const routes = useNavigationState((state) =>
-    state.routeNames.filter((name) => name !== options.title)
+    state.routeNames.filter((name) => name !== testData.title)
   );
 
-  const pressed = ({ pressed }) => [
-    pressed ? options.styles.buttonPressed : options.styles.buttonNotPressed,
-    options.styles.button
-  ];
   const links = routes.map((route) => {
     return (
       <Pressable
         onPress={() => navigation.navigate(route)}
-        style={pressed}
         key={route}
+        style={testData.styles.button}
       >
-        <Text style={options.styles.buttonText}>{route}</Text>
+        <Text style={testData.styles.buttonText}>{route}</Text>
       </Pressable>
     );
   });
   return (
     <View>
-      <Text style={options.styles.text}>
-        {options.copy} ({routes.length})
+      <Text style={testData.styles.text}>
+        {testData.copy} ({routes.length})
       </Text>
       {links}
-    </View>
-  );
-}
-
-function GlobalOptions({ options }) {
-  const global = useContext(GlobalOptionsContext);
-  const globalInfo = Object.entries(global).map(([key, val]) => {
-    return (
-      <View style={options.styles.text} key={key}>
-        <Text style={options.styles.boldText}>{key}</Text>
-        <Text>{JSON.stringify(val)}</Text>
-      </View>
-    );
-  });
-  return (
-    <View>
-      <Text style={options.styles.text}>
-        Global options ({Object.entries(global).length})
-      </Text>
-      {globalInfo}
     </View>
   );
 }

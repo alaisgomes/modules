@@ -1,5 +1,5 @@
 {
-    "title": "Barcode scanner Screen",
+    "title": "My org Barcode Screen",
     "description": "Barcode scanner screen",
-    "root": "/screens/barcode-scanner"
+    "root": "/screens/my-org-barcode-scanner"
 }
