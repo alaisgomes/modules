@@ -1,5 +1,0 @@
-{
-  "title": "OCR (Django)",
-  "description": "Backend for the OCR module.",
-  "root": "/backend/modules"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "WalletConnect",
-  "description": "A set of screens to connect wallets to the app.",
-  "root": "/modules/wallet-connect"
-}

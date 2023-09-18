@@ -1,5 +1,0 @@
-{
-    "title": "Typeform webhook",
-    "description": "Backend for the Typeform Webhook Module",
-    "root": "/backend/modules"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "MailChimp (Django)",
-  "description": "Backend for the MailChimp module.",
-  "root": "/backend/modules"
-}
