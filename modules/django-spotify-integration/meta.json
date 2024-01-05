@@ -1,0 +1,6 @@
+{
+  "title": "spotify-integration",
+  "description": "This module creates a back-end integration with the spotify API.",
+  "root": "/backend/modules",
+  "schema": {}
+}

@@ -1,0 +1,6 @@
+{
+  "title": "reset-password",
+  "description": "This module is a screen to help users reset their password.",
+  "root": "/modules/reset-password",
+  "schema": {}
+}

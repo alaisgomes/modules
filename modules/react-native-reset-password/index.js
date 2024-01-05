@@ -1,15 +1,15 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-function TestModule() {
+function ResetPassword() {
   return (
     <View>
-      <Text>test-module</Text>
+      <Text>reset-password</Text>
     </View>
   );
 }
 
 export default {
-  title: "test-module",
-  navigator: TestModule
+  title: "reset-password",
+  navigator: ResetPassword
 };

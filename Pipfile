@@ -6,7 +6,9 @@ name = "pypi"
 [packages]
 cookiecutter = "*"
 urllib3 = "*"
+django = "==3.2.23"
 
 [dev-packages]
+
 [requires]
 python_version = "3.8"
