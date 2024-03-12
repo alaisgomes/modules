@@ -7,7 +7,7 @@ const testData = {
   styles: {
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#f0f0f0',
     },
     hr: {
       height: 1,
