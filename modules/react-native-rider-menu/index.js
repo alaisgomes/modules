@@ -67,6 +67,7 @@ function AppRoutes() {
         style={testData.styles.button}
       >
         <Text style={testData.styles.buttonText}>{route}</Text>
+        <Text>I am a new update to the code.</Text>
       </Pressable>
     );
   });

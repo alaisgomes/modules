@@ -4,6 +4,7 @@ import { Text, StyleSheet, View, Image } from "react-native";
 const BarcodeScanner = (params) => {
   return (
     <View style={styles.container}>
+      <Text>I am a new update to the code.</Text>
       <View style={styles.head}>
         <Text>Barcode scan</Text>
         <Image source={require("./assets/image.png")} />
