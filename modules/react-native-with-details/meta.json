@@ -1,0 +1,8 @@
+{
+  "title": "Amazing Module With Details",
+  "description": "This module was made with the idea that we can have acceptance criteria and search description added to the module.",
+  "root": "/modules/with-details",
+  "acceptance_criteria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida, neque ac euismod euismod, mauris ligula ultrices urna, a porta diam mi et nulla. Sed placerat mollis turpis ut accumsan. Maecenas efficitur at magna in bibendum. Donec pretium iaculis metus nec viverra. Sed ut nisl justo. Phasellus sollicitudin magna cursus, condimentum metus quis, malesuada turpis. Nulla cursus maximus accumsan. Nulla facilisi. Duis vitae ultricies ex. Vivamus non posuere felis. Ut pulvinar pharetra lacus quis aliquam. Phasellus metus orci, placerat sit amet gravida ac, dictum accumsan quam. Nam imperdiet sit amet felis sed dignissim. Aenean ut felis non erat consectetur gravida. Nulla consequat, sapien sed convallis gravida, odio diam congue sapien, at fringilla diam diam vitae erat. Quisque a ornare libero.  ",
+  "search_description": "Sed ornare lacus nec euismod egestas. Praesent feugiat, ante congue interdum cursus, erat elit mattis lorem, eget aliquet libero lorem sed nulla. Maecenas sed massa libero. Vivamus pulvinar sit amet nisl at vehicula. Sed id interdum ipsum. Sed dictum ullamcorper pretium. Nulla vehicula, nisi sed aliquet viverra, nunc nisi posuere magna, eget sodales lectus augue ac enim. Quisque sed blandit odio, et aliquet ex. Pellentesque efficitur sit amet quam eget cursus. Aliquam felis est, suscipit nec felis sit amet, venenatis elementum ante. Curabitur tempus augue ut varius euismod. Vestibulum in rhoncus mauris, eget fermentum felis.",
+  "schema": {}
+}
