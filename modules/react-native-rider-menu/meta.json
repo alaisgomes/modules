@@ -1,5 +1,5 @@
 {
-  "title": "My Organization App Menu",
+  "title": "My Organization Rider Menu",
   "description": "Module that shows available routes in a menu with links",
-  "root": "/modules/my-org-app-menu"
+  "root": "/modules/my-org-rider-menu"
 }
