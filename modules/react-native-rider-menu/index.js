@@ -31,7 +31,7 @@ const testData = {
       textAlign: 'center',
     },
     text: {
-      fontSize: 18,
+      fontSize: 20,
       padding: 10,
     },
     boldText: {
